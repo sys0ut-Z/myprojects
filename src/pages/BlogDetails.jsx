@@ -1,0 +1,26 @@
+import React from 'react'
+import { useLocation } from 'react-router'
+
+const BlogDetails = () => {
+  const location = useLocation()
+
+  const {image, title, author, blogDate, text, description} = location.state;
+
+  return (
+    <div className='pt-32'>
+
+      {/* Image Section */}
+      <div className='min-h-[500px] min-w-screen'>
+        <img src={image} className='max-h-full min-w-full object-cover'/>
+      </div>
+
+      {/* Text Content Section */}
+      <div className='container py-10'>
+        <h1 className='pb-5 text-xl sm:text-3xl lg:text-4xl font-semibold'>{author}'s {title.toString().replace('-', ' ')}</h1>
+        <p className='text-lg'>{description}</p>
+      </div>
+    </div>
+  )
+}
+
+export default BlogDetails
