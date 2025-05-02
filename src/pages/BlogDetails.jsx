@@ -10,8 +10,8 @@ const BlogDetails = () => {
     <div className='pt-16 sm:pt-24 bg-white dark:bg-gray-800'>
 
       {/* Image Section */}
-      <div className='min-h-[500px] min-w-screen'>
-        <img src={image} className='max-h-full min-w-full object-cover'/>
+      <div className=' min-w-screen'>
+        <img src={image} className='min-h-full min-w-full object-cover'/>
       </div>
 
       {/* Text Content Section */}
