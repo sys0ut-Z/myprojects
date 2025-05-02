@@ -35,8 +35,8 @@ const MobileResMenu = ({showMenubar, setShowMenubar}) => {
           </ul> 
         </div>
       </div>
-        <div className='absolute left-6 bottom-6 text-xs sm:text-lg dark:text-white'>
-          Download Hight Quality Images for Free
+        <div className='absolute left-6 bottom-6 text-xs sm:text-lg text-black dark:text-white'>
+          Download High Quality Images for Free
         </div>
     </div>
   )

@@ -130,7 +130,7 @@ const Navbar = ({setShowPopup}) => {
             </div>
 
             {/* Hamburger Menu */}
-            <div className='col-span-1 md:hidden flex justify-end items-center pr-6'>
+            <div className='col-span-1 md:hidden flex justify-end items-center pr-3'>
               {
                 showMenubar ? (
                   <HiMenuAlt1 onClick={() => setShowMenubar(prev => !prev)}
