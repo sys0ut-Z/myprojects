@@ -44,8 +44,8 @@ const DownloadPopup = ({showPopup, setShowPopup}) => {
           <div className='flex flex-col gap-6 '>
             {
               inputFields.map(({id, text, type}) => (
-                <div className='flex flex-col'>
-                  <input type={type} placeholder={text} key={id}
+                <div className='flex flex-col' key={id}>
+                  <input type={type} placeholder={text}
                     className='py-[5px] px-4 rounded-full border border-gray-400 focus:border focus:border-primary caret-primary
                     focus:outline-none'
                     {...register(`${text.toLowerCase()}`, {

@@ -140,7 +140,7 @@ const PreviewImages = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   return (
-    <div className='pt-32 pb-16'>
+    <div className='pt-32 pb-16 dark:bg-gray-800'>
       <div className="container py-6">
 
         {

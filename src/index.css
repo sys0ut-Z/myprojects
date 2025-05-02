@@ -4,6 +4,10 @@
 
 @layer components{
   .container{
-    @apply mx-auto px-[1rem] md:px-[2rem];
+    @apply mx-auto px-[1rem];
+
+    @media (min-width: 640px){ /* >=sm */
+      padding-inline: 2rem;
+    }
   }
 }

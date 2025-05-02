@@ -68,7 +68,7 @@ const carImages2 = [
 
 const BestCars = () => {
   return (
-    <div className='py-16 text-black bg-gray-100'>
+    <div className='py-16 bg-gray-100 dark:bg-gray-800'>
       <div className='container space-y-10'>
         <h1 className='text-3xl lg:text-4xl font-bold text-primary text-center'>Explore the Quality</h1>
         <div className='space-y-10'>
@@ -79,7 +79,7 @@ const BestCars = () => {
               carImages.map(({id, image}) => (
                 <div key={id} className='max-w-[200px] max-h-[350px]'>
                   <img src={image} className='min-w-full min-h-full object-cover hover:scale-110 transition-all duration-500
-                  rounded-md'/>
+                  rounded-md dark:saturate-150'/>
                   {/* // ? optional --> xl:saturate-0 xl:hover:saturate-100 */}
                 </div>
               ))

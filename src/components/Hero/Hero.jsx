@@ -52,7 +52,7 @@ const Hero = ({setShowPopup}) => {
           <source src={CarVideo} type="video/mp4"/>
         </video>
 
-        <div className='relative bg-black/70 h-full w-full z-20'>
+        <div className='relative bg-black/70 dark:bg-black/80 h-full w-full z-20'>
           <div className="container text-white py-[180px]">
             <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center gap-10'>
 

@@ -36,7 +36,7 @@ const blogDetails = [
 
 const Blogs = () => {
   return (
-    <div className='pt-16 pb-28'>
+    <div className='pt-16 pb-28 dark:bg-gray-800'>
       <h1 className='pb-10 text-3xl lg:text-4xl font-bold text-center text-primary'>Latest Blogs</h1>
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-11 lg:gap-7">

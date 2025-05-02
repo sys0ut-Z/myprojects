@@ -16,7 +16,7 @@ const BlogCard = ({
         image, title, author, blogDate, text, description
       }}
     >
-      <div className='shadow-xl bg-white rounded-lg hover:scale-105 transition-all duration-300'>
+      <div className='shadow-xl bg-white dark:bg-gray-700 dark:text-white rounded-lg hover:scale-105 transition-all duration-300'>
 
         {/* Header Image */}
         <div className='max-h-[400px] overflow-hidden'>
@@ -25,7 +25,7 @@ const BlogCard = ({
 
         {/* Blog Info */}
         <div className='px-3 py-4 space-y-3'>
-          <h1 className='text-xl font-semibold'>Written by {author}</h1>
+          <h1 className='text-xl font-semibold'>Written by <span className='dark:text-secondary'>{author}</span></h1>
           <h1 className='text-lg tracking-wide'>On {blogDate}</h1>
           <p className='line-clamp-3 text-pretty'>{text}</p>
         </div>

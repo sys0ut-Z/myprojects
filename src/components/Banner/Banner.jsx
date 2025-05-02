@@ -3,7 +3,7 @@ import BolideImg from '../../assets/bugatti/bugatti bolide landscape.jpg'
 
 const Banner = () => {
   return (
-    <div className='py-16 bg-gray-200'>
+    <div className='py-16 bg-gray-200 dark:bg-gray-900'>
       <div className="container">
         <h1 className='pb-16 text-3xl lg:text-4xl font-bold text-center text-primary'>Top Companies</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
@@ -19,7 +19,7 @@ const Banner = () => {
 
           {/* Text Section */}
           <div className='flex items-center'>
-            <p className='lg:text-lg px-4 text-pretty font-semibold line-clamp-[8]'>Bugatti is a French luxury automobile manufacturer known for producing high-performance, handcrafted sports cars. Founded in 1909 by Ettore Bugatti, the brand became famous for its innovation, elegance, and racing success. The company combines cutting-edge technology with timeless design to create some of the world’s most exclusive vehicles. Bugatti cars are known for their exceptional speed, luxury, and engineering precision. Models like the Veyron and Chiron have set world records for top speed while offering unmatched performance and comfort. Each car features a powerful W16 engine, advanced aerodynamics, and a meticulously crafted interior</p>
+            <p className='lg:text-lg px-4 text-pretty font-semibold line-clamp-[8] dark:text-gray-200'>Bugatti is a French luxury automobile manufacturer known for producing high-performance, handcrafted sports cars. Founded in 1909 by Ettore Bugatti, the brand became famous for its innovation, elegance, and racing success. The company combines cutting-edge technology with timeless design to create some of the world’s most exclusive vehicles. Bugatti cars are known for their exceptional speed, luxury, and engineering precision. Models like the Veyron and Chiron have set world records for top speed while offering unmatched performance and comfort. Each car features a powerful W16 engine, advanced aerodynamics, and a meticulously crafted interior</p>
           </div>
         </div>
       </div>

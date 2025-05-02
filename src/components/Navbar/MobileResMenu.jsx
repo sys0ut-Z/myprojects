@@ -7,17 +7,17 @@ const MobileResMenu = ({showMenubar, setShowMenubar}) => {
   return (
     <div className={`fixed z-50 top-0 ${showMenubar ? "left-0" : "-left-[200%]"} 
       h-screen w-screen bg-black/60 block transition-all duration-300`}>
-      <div className='absolute top-0 left-0 w-[80%] sm:w-[60%] h-full bg-white p-7'>
+      <div className='absolute top-0 left-0 w-[80%] sm:w-[60%] h-full bg-white dark:bg-gray-800 p-7'>
 
         {/* Header Section */}
         <div className='flex justify-between items-center'>
           <h1 className='flex items-center gap-3'>
-            <span><FaUserCircle size={40} /></span>
-            <span className='text-lg font-semibold'>User</span>
+            <span><FaUserCircle size={40} className='dark:text-gray-300'/></span>
+            <span className='text-lg font-semibold dark:text-white'>User</span>
           </h1>
           <span>
             <IoMdClose size={25} onClick={() => setShowMenubar(prev => !prev)}
-              className='cursor-pointer'  
+              className='cursor-pointer dark:text-white'  
             />
           </span>
         </div>
@@ -35,7 +35,7 @@ const MobileResMenu = ({showMenubar, setShowMenubar}) => {
           </ul> 
         </div>
       </div>
-        <div className='absolute left-6 bottom-6 sm:text-lg'>
+        <div className='absolute left-6 bottom-6 text-xs sm:text-lg dark:text-white'>
           Download Hight Quality Images for Free
         </div>
     </div>

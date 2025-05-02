@@ -7,7 +7,7 @@ const BlogDetails = () => {
   const {image, title, author, blogDate, text, description} = location.state;
 
   return (
-    <div className='pt-32'>
+    <div className='pt-16 sm:pt-24 bg-gray-800'>
 
       {/* Image Section */}
       <div className='min-h-[500px] min-w-screen'>
@@ -16,8 +16,10 @@ const BlogDetails = () => {
 
       {/* Text Content Section */}
       <div className='container py-10'>
-        <h1 className='pb-5 text-xl sm:text-3xl lg:text-4xl font-semibold'>{author}'s {title.toString().replace('-', ' ')}</h1>
-        <p className='text-lg'>{description}</p>
+        <h1 className='pb-5 text-xl sm:text-3xl lg:text-4xl font-semibold dark:text-white lg:tracking-wide'>
+          {author}'s {title.toString().replace('-', ' ')}
+        </h1>
+        <p className='text-lg dark:text-gray-300'>{description}</p>
       </div>
     </div>
   )
