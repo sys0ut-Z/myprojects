@@ -7,7 +7,7 @@ const BlogDetails = () => {
   const {image, title, author, blogDate, text, description} = location.state;
 
   return (
-    <div className='pt-16 sm:pt-24 bg-gray-800'>
+    <div className='pt-16 sm:pt-24 bg-white dark:bg-gray-800'>
 
       {/* Image Section */}
       <div className='min-h-[500px] min-w-screen'>
