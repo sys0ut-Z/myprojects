@@ -6,12 +6,12 @@ import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import MobileResMenu from './MobileResMenu'
 import DarkMode from './DarkMode'
 
-export const navLinks = [
+const navLinks = [
   {
     id: 1,
     text : (
       <NavLink to="/" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-md lg:text-lg`}
       >
         Home
       </NavLink>
@@ -21,7 +21,7 @@ export const navLinks = [
     id: 2,
     text : (
       <NavLink to="/blogs" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-md lg:text-lg`}
       >
         Blogs
       </NavLink>
@@ -41,12 +41,22 @@ export const navLinks = [
     id: 4,
     text : (
       <NavLink to="/preview-imgs" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-md lg:text-lg`}
       >
         Preview
       </NavLink>
     )
   },
+  {
+    id: 5,
+    text : (
+      <NavLink to="/cars-info" onClick={() => window.scrollTo(0, 0)}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-md lg:text-lg`}
+      >
+        Info
+      </NavLink>
+    )
+  }
 ]
 
 const dropDownLinks = [
@@ -81,16 +91,16 @@ const Navbar = ({setShowPopup}) => {
           <div className='grid grid-cols-4 md:grid-cols-5 xl:grid-cols-4 place-items-stretch'>
 
             {/* Left Section */}
-            <div className='col-span-1 max-h-[110px] max-w-[110px] lg:max-w-[120px]'>
+            <div className='col-span-1 max-h-[100px] max-w-[100px] lg:max-w-[110px]'>
               <img src={Logo} className='max-h-full max-w-full rounded-full object-contain'/>
             </div>
 
             {/* navLinks */}
             <div className='hidden md:grid justify-items-center col-span-2'>
-              <ul className='flex justify-between items-center gap-14'>
+              <ul className='flex items-center gap-14'>
                 {
                   navLinks.map(({id, text}) => (
-                    <li key={id} className='font-semibold lg:max-lg:text-sm'>
+                    <li key={id} className='font-semibold'>
                       {text} 
                     </li>
                   ))
@@ -102,12 +112,12 @@ const Navbar = ({setShowPopup}) => {
                     <span className='text-center dark:text-white'>Imp Links</span>
                     <span><FaCaretDown className='group-hover:-rotate-180 transition-all duration-300 dark:text-white'/></span>
                   </a>
-                  <div className='absolute -left-10 hidden group-hover:block w-[150px] pt-2'>
-                    <ul className='p-2 bg-white dark:bg-gray-800 space-y-4 rounded-md shadow-md'>
+                  <div className='absolute -left-10 hidden group-hover:block w-[140px] pt-2'>
+                    <ul className='p-2 bg-white dark:bg-gray-800 space-y-3 rounded-md shadow-md'>
                       {
                         dropDownLinks.map(({id, text, link}) => (
                           <li key={id} 
-                          className='hover:bg-primary/50 dark:hover:bg-primary hover:text-white px-1 py-2 text-lg font-semibold rounded-md cursor-pointer dark:text-white'>
+                          className='hover:bg-primary/50 dark:hover:bg-primary hover:text-white px-2 py-2 text-md font-semibold rounded-md cursor-pointer dark:text-white'>
                             <a href={link}>{text}</a>
                           </li>
                         ))

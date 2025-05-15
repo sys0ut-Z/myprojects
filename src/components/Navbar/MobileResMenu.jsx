@@ -1,7 +1,59 @@
 import React from 'react'
+import { NavLink } from 'react-router'
 import { FaUserCircle } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { navLinks } from './Navbar';
+const navLinks = [
+  {
+    id: 1,
+    text : (
+      <NavLink to="/" onClick={() => window.scrollTo(0, 0)}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+      >
+        Home
+      </NavLink>
+    )
+  },
+  {
+    id: 2,
+    text : (
+      <NavLink to="/blogs" onClick={() => window.scrollTo(0, 0)}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+      >
+        Blogs
+      </NavLink>
+    )
+  },
+  // {
+  //   id: 3,
+  //   text : (
+  //     <NavLink to="/about-cars" onClick={() => window.scrollTo(0, 0)}
+  //       className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+  //     >
+  //       About
+  //     </NavLink>
+  //   )
+  // },
+  {
+    id: 4,
+    text : (
+      <NavLink to="/preview-imgs" onClick={() => window.scrollTo(0, 0)}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+      >
+        Preview
+      </NavLink>
+    )
+  },
+  {
+    id: 5,
+    text : (
+      <NavLink to="/cars-info" onClick={() => window.scrollTo(0, 0)}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-md lg:text-lg`}
+      >
+        Info
+      </NavLink>
+    )
+  }
+]
 
 const MobileResMenu = ({showMenubar, setShowMenubar}) => {
   return (
