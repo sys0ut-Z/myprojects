@@ -46,7 +46,7 @@ const Footer = () => {
         </video>
 
         {/* Links Section */}
-        <div className=' dark:bg-black/80 relative top-0 left-0 min-h-[500px] min-w-screen z-10'>
+        <div className='bg-black/65 dark:bg-black/80 relative top-0 left-0 min-h-[500px] min-w-screen z-10'>
           <div className='container py-24'>
             <div className='py-14 px-3 bg-white dark:bg-gray-900 rounded-md grid grid-cols-2 md:grid-cols-4 gap-8'>
 
