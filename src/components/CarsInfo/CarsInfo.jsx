@@ -68,7 +68,7 @@ const carDetails = [
   {
     id: 10,
     image: img10,
-    car: "Ferrari SF90 Stradale",
+    car: "Ferrari Daytona",
     desc: "The Ferrari Daytona, officially known as the 365 GTB/4, was introduced in 1968 as a front-engined grand tourer. It features a 4.4-liter V12 engine producing around 352 horsepower, allowing it to reach a top speed of over 280 km/h. The Daytona could accelerate from 0 to 100 km/h in about 5.4 seconds, making it one of the fastest cars of its time. Its sleek, aggressive design was created by Pininfarina, with a long hood and pop-up headlights giving it a distinctive look. The car was named \"Daytona\" by the media to celebrate Ferrari’s 1-2-3 finish at the 1967 Daytona 24 Hours race. Only around 1,400 units were produced, making it a rare collector's car. The Daytona remains a symbol of Ferrari’s golden era of grand touring excellence."
   }
 ]
