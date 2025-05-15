@@ -84,10 +84,9 @@ const CarsInfo = () => {
                   {/* here, by giving flex it will cover the image */}
                   <img src={image} className='min-w-full min-h-full object-cover rounded-md'/>
                 </div>
-                <div className='text-sm lg:text-base lg:px-1 px-2'>
+                <div className='lg:px-1 px-2'>
                   <h1 className='text-base sm:text-lg xl:text-2xl font-bold pb-3 tracking-wider dark:text-secondary'>{car}</h1>
-                  <span className='dark:text-gray-200 max-[1533px]:line-clamp-[9] text-xs sm:text-sm md:text-base 
-                  text-pretty sm:text-justify'>{desc}</span>
+                  <span className='dark:text-gray-200 max-[1533px]:line-clamp-[9] text-xs sm:text-sm md:text-base sm:text-justify'>{desc}</span>
                 </div>
               </div>
             ))
