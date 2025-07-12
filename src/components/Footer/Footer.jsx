@@ -84,7 +84,7 @@ const Footer = () => {
                 <h1 className='text-xl sm:text-2xl lg:text-3xl font-bold dark:text-white'>Car Companies</h1>
                 <ul className='pt-4 space-y-4'>
                   {
-                    ["Koenigsegg", "Bugatti", "Ferrari", "Lamborghini", "Astom Martin"].map((text, id) => (
+                    ["Koenigsegg", "Bugatti", "Ferrari", "Lamborghini", "Aston Martin"].map((text, id) => (
                       <li className='sm:text-lg' key={id}>
                         <a href={`/#${text}`} className='hover:text-primary transition-all duration-300
                         dark:text-gray-300 dark:hover:text-secondary'>{text}</a>
