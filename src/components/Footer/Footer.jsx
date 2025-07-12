@@ -125,7 +125,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+          <div class="absolute bottom-10 sm:bottom-6 left-1/2 -translate-x-1/2 text-xs md:text-sm xl:text-base text-white tracking-wide text-center">MADE BY ZANKHAN, AMBITIOUS &amp; ANONYMOUS CODER😎🔥</div>
+        </div>    
       </div>
     </div>
   )
