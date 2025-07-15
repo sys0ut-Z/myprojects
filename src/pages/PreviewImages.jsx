@@ -177,10 +177,10 @@ const PreviewImages = () => {
         </div>
         <div className='text-center'>
           <button className='mt-6 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 
-            text-md lg:text-2xl hover:scale-105 transition-all duration-300'
+            text-xs sm:text-sm hover:scale-105 transition-all duration-300 rounded-full'
             onClick={() => setShowPopup(prev => !prev)}
           >
-            Download Now
+            Download
           </button>
         </div>
       </div>

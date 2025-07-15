@@ -21,10 +21,10 @@ const DarkMode = () => {
 
   return (
     <div className='relative flex justify-center items-center rounded-full'>
-      <MdDarkMode size={27} className={`${theme === "dark" ? "opacity-0" : "opacity-100"} cursor-pointer transition-all duration-300`}
+      <MdDarkMode size={20} className={`${theme === "dark" ? "opacity-0" : "opacity-100"} cursor-pointer transition-all duration-300`}
         onClick={() => setTheme(theme === "dark" ? "dark" : "light")}
       />  
-      <MdLightMode size={27} className={`absolute ${theme === "dark" ? "opacity-100" : "opacity-0"}
+      <MdLightMode size={20} className={`absolute ${theme === "dark" ? "opacity-100" : "opacity-0"}
       top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 text-white`} 
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       />

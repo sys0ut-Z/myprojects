@@ -3,7 +3,7 @@ import Blogs from '../components/Blogs/Blogs'
 
 const BlogsComp = () => {
   return (
-    <div className='pt-[67px] sm:pt-[85px]'>
+    <div className='pt-[40px] sm:pt-[50px]'>
       <Blogs />
     </div>
   )

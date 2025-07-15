@@ -27,7 +27,7 @@ const blogDetails = [
     id: 3,
     image: img3,
     title : 'Ferrari-Blog',
-    author : 'James Morgans',
+    author : 'Tom Holland',
     blogDate : '21 Nov, 2024',
     text : 'Ferrari is an iconic Italian sports car manufacturer celebrated for its racing heritage, sleek design, and powerful performance. Its cars combine luxury with speed, making them a symbol of prestige and passion.',
     description : 'Ferrari is a legendary Italian sports car manufacturer founded by Enzo Ferrari in 1939, originally as a racing team. The brand is renowned for its sleek design, high-performance engines, and deep roots in Formula 1 racing. Ferrari cars, such as the 488 GTB, LaFerrari, and SF90 Stradale, combine luxury with cutting-edge technology. The signature prancing horse logo has become a global symbol of speed, passion, and prestige. With countless victories in motorsport, especially in Formula 1, Ferrari has built a legacy of excellence on and off the track. Each car is crafted with meticulous attention to detail and a focus on the driving experience. The company balances innovation with heritage, often drawing inspiration from its racing history. Ferrari continues to captivate enthusiasts and collectors with its bold designs, roaring engines, and unmistakable Italian flair. Ferrari’s commitment to excellence extends beyond performance, with a strong emphasis on design, innovation, and luxury. With a perfect blend of tradition and progress, Ferrari remains one of the most admired and respected names in the automotive world.'
@@ -37,7 +37,7 @@ const blogDetails = [
 const Blogs = () => {
   return (
     <div className='pt-16 pb-28 bg-white dark:bg-gray-800'>
-      <h1 className='pb-10 text-3xl lg:text-4xl font-bold text-center text-primary'>Latest Blogs</h1>
+      <h1 className='pb-10 text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-primary'>Latest Blogs</h1>
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-11 lg:gap-7">
           {

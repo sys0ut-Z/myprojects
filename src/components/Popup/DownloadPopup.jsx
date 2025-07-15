@@ -37,11 +37,11 @@ const DownloadPopup = ({showPopup, setShowPopup}) => {
         <h1 className='flex justify-between items-center pb-5'>
           <span className='text-xl lg:text-2xl font-semibold'>Download Now</span>
           <span>
-            <IoCloseOutline size={23} onClick={() => setShowPopup(prev => !prev)} className='cursor-pointer'/>
+            <IoCloseOutline size={20} onClick={() => setShowPopup(prev => !prev)} className='cursor-pointer'/>
           </span>
         </h1>
         <form onSubmit={handleSubmit(submitHandler)}>
-          <div className='flex flex-col gap-6 '>
+          <div className='flex flex-col gap-3 '>
             {
               inputFields.map(({id, text, type}) => (
                 <div className='flex flex-col' key={id}>
@@ -63,7 +63,7 @@ const DownloadPopup = ({showPopup, setShowPopup}) => {
             }
           </div>
           <div className='pt-4 text-center'>
-            <button className='px-7 py-2 bg-primary rounded-full text-white text-lg'
+            <button className='px-7 py-2 bg-primary rounded-full text-white text-xs sm:text-sm'
             type="submit">Download</button>
           </div>
         </form>

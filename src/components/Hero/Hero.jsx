@@ -59,12 +59,12 @@ const Hero = ({setShowPopup}) => {
               {/* Text Content Section */}
               <div className='order-2 lg:order-1 space-y-6 lg:space-y-7'>
                 <h1 className='text-3xl lg:text-5xl font-bold text-primary'>Get Images for Free</h1>
-                <p className='cursor-default text-base sm:text-xl text-pretty py-4 line-clamp-3'>
+                <p className='cursor-default text-sm lg:text-base text-pretty py-4 line-clamp-3'>
                   Want some images for your project, check out our free high quality images. We have famous car companies like 
                   Bugatti, Lamborghini, Koenigsegg and much more. What are your waiting for? Grab those Images right now
                 </p>
-                <button className='bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 
-                  text-sm lg:text-xl hover:scale-105 transition-all duration-300'
+                <button className='bg-gradient-to-r from-primary to-secondary text-white px-5 py-2 
+                  text-sm lg:text-base hover:scale-105 transition-all duration-300 rounded-full'
                   onClick={() => setShowPopup(prev => !prev)}
                 >
                   Download Now
@@ -78,7 +78,7 @@ const Hero = ({setShowPopup}) => {
                     {
                       carImages.map(({id, image}) => (
                         <div key={id}>
-                          <div className='mx-auto max-w-[300px] sm:max-w-[400px] sm:max-h-[550px] xl:max-w-[500px] xl:max-h-[700px] px-5'>
+                          <div className='mx-auto max-w-[300px] sm:max-w-[400px] sm:max-h-[550px] xl:max-w-[500px] xl:max-h-[700px] px-3'>
                             <img src={image} className='max-w-full max-h-full object-cover rounded-lg border-2 border-white'/>
                           </div>
                         </div>

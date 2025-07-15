@@ -7,7 +7,7 @@ const navLinks = [
     id: 1,
     text : (
       <NavLink to="/" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} text-sm sm:text-base`}
       >
         Home
       </NavLink>
@@ -17,7 +17,7 @@ const navLinks = [
     id: 2,
     text : (
       <NavLink to="/blogs" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} text-sm sm:text-base`}
       >
         Blogs
       </NavLink>
@@ -37,7 +37,7 @@ const navLinks = [
     id: 4,
     text : (
       <NavLink to="/preview-imgs" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-lg lg:text-xl`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} text-sm sm:text-base`}
       >
         Preview
       </NavLink>
@@ -47,12 +47,12 @@ const navLinks = [
     id: 5,
     text : (
       <NavLink to="/cars-info" onClick={() => window.scrollTo(0, 0)}
-        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} md:text-md lg:text-lg`}
+        className={({isActive}) => `${isActive ? "text-primary" : "text-black dark:text-white"} text-sm sm:text-base`}
       >
         Info
       </NavLink>
     )
-  }
+  },
 ]
 
 const MobileResMenu = ({showMenubar, setShowMenubar}) => {
@@ -79,7 +79,7 @@ const MobileResMenu = ({showMenubar, setShowMenubar}) => {
           <ul className='space-y-6'>
             {
               navLinks.map(({id, text}) => (
-                <li className='font-semibold' key={id}>
+                <li key={id} onClick={() => setShowMenubar(false)}>
                   {text}
                 </li>
               ))

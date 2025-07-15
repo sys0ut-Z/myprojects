@@ -25,9 +25,9 @@ const BlogCard = ({
 
         {/* Blog Info */}
         <div className='px-3 py-4 space-y-3'>
-          <h1 className='text-xl font-semibold'>Written by <span className='dark:text-secondary'>{author}</span></h1>
-          <h1 className='text-lg tracking-wide'>On {blogDate}</h1>
-          <p className='line-clamp-3 text-pretty'>{text}</p>
+          <h1 className='text-lg lg:text-xl font-semibold'>Written by <span className='dark:text-secondary'>{author}</span></h1>
+          <h1 className='text-sm lg:text-base tracking-wide'>On {blogDate}</h1>
+          <p className='line-clamp-3 text-pretty text-sm lg:text-base'>{text}</p>
         </div>
       </div>
     </Link>
